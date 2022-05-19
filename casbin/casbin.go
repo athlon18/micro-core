@@ -17,7 +17,7 @@ type CasbinService struct {
 }
 
 func NewCasbinRepository(db *gorm.DB, modelPath string) *CasbinService {
-	return &CasbinService{db: db}
+	return &CasbinService{db: db, modelPath: modelPath}
 }
 
 func (c *CasbinService) Casbin() *casbin.SyncedEnforcer {
