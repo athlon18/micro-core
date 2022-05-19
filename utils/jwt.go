@@ -3,7 +3,7 @@ package utils
 import (
 	"errors"
 	"github.com/athlon18/micro-core/config/structs"
-	"github.com/dgrijalva/jwt-go"
+	"github.com/golang-jwt/jwt"
 	"golang.org/x/sync/singleflight"
 
 	"time"

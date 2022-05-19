@@ -5,13 +5,12 @@ go 1.17
 require (
 	github.com/casbin/casbin/v2 v2.39.1
 	github.com/casbin/gorm-adapter/v3 v3.4.6
-	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/go-redis/redis/v8 v8.11.4
+	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/gookit/color v1.5.0
 	github.com/satori/go.uuid v1.2.0
 	github.com/spf13/viper v1.9.0
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
-	gorm.io/driver/mysql v1.2.1
 	gorm.io/gorm v1.22.4
 )
 
@@ -48,6 +47,7 @@ require (
 	golang.org/x/text v0.3.7 // indirect
 	gopkg.in/ini.v1 v1.63.2 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
+	gorm.io/driver/mysql v1.2.1 // indirect
 	gorm.io/driver/postgres v1.2.2 // indirect
 	gorm.io/driver/sqlserver v1.2.1 // indirect
 	gorm.io/plugin/dbresolver v1.1.0 // indirect

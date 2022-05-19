@@ -3,7 +3,7 @@ package utils
 import (
 	"fmt"
 	"github.com/athlon18/micro-core/config/structs"
-	"github.com/dgrijalva/jwt-go"
+	"github.com/golang-jwt/jwt"
 	uuid "github.com/satori/go.uuid"
 )
 
