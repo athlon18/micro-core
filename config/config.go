@@ -13,12 +13,14 @@ type Config struct {
 }
 
 type Mode struct {
-	Mode   string         `json:"mode"`
-	App    structs.App    `mapstructure:"app" json:"app" yaml:"app"`
-	Mysql  structs.Mysql  `json:"mysql" yaml:"mysql"`
-	Redis  structs.Redis  `json:"redis" yaml:"redis"`
-	Casbin structs.Casbin `json:"casbin" yaml:"casbin"`
-	JWT    structs.JWT    `json:"jwt" yaml:"jwt"`
+	Mode               string                  `json:"mode"`
+	App                structs.App             `mapstructure:"app" json:"app" yaml:"app"`
+	Mysql              map[string]structs.Data `json:"mysql" yaml:"mysql"`
+	Redis              structs.Redis           `json:"redis" yaml:"redis"`
+	Casbin             structs.Casbin          `json:"casbin" yaml:"casbin"`
+	JWT                structs.JWT             `json:"jwt" yaml:"jwt"`
+	CenterServerAddr   string                  `json:"CenterServerAddr" yaml:"CenterServerAddr"`
+	BurgeonServiceAddr string                  `json:"BurgeonServiceAddr" yaml:"BurgeonServiceAddr"`
 }
 
 func (cfg Config) getLocal() Mode {
@@ -45,7 +47,7 @@ func (mode Mode) setMode(str string) Mode {
 	return mode
 }
 
-func (mode Mode) GetMysql() structs.Mysql {
+func (mode Mode) GetMysql() map[string]structs.Data {
 	return mode.Mysql
 }
 
