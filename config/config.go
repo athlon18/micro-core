@@ -13,14 +13,19 @@ type Config struct {
 }
 
 type Mode struct {
-	Mode               string                  `json:"mode"`
-	App                structs.App             `mapstructure:"app" json:"app" yaml:"app"`
-	Mysql              map[string]structs.Data `json:"mysql" yaml:"mysql"`
-	Redis              structs.Redis           `json:"redis" yaml:"redis"`
-	Casbin             structs.Casbin          `json:"casbin" yaml:"casbin"`
-	JWT                structs.JWT             `json:"jwt" yaml:"jwt"`
-	CenterServerAddr   string                  `json:"CenterServerAddr" yaml:"CenterServerAddr"`
-	BurgeonServiceAddr string                  `json:"BurgeonServiceAddr" yaml:"BurgeonServiceAddr"`
+	Mode               string                   `json:"mode"`
+	App                structs.App              `mapstructure:"app" json:"app" yaml:"app"`
+	Mysql              map[string]structs.Data  `json:"mysql" yaml:"mysql"`
+	Redis              structs.Redis            `json:"redis" yaml:"redis"`
+	Mongo              map[string]structs.Mongo `json:"mongo" yaml:"mongo"`
+	Casbin             structs.Casbin           `json:"casbin" yaml:"casbin"`
+	Consul             structs.Consul           `json:"consul" yaml:"consul"`
+	Wechat             structs.Wechat           `json:"wechat" yaml:"wechat"`
+	JWT                structs.JWT              `json:"jwt" yaml:"jwt"`
+	CenterServerAddr   string                   `json:"CenterServerAddr" yaml:"CenterServerAddr"`
+	BurgeonServiceAddr string                   `json:"BurgeonServiceAddr" yaml:"BurgeonServiceAddr"`
+	RossServerAddr     string                   `json:"rossServerAddr" yaml:"rossServerAddr"`
+	OaServerAddr       string                   `json:"oaServerAddr" yaml:"oaServerAddr"`
 }
 
 func (cfg Config) getLocal() Mode {
