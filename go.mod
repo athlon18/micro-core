@@ -6,9 +6,9 @@ require (
 	github.com/casbin/casbin/v2 v2.39.1
 	github.com/casbin/gorm-adapter/v3 v3.4.6
 	github.com/go-redis/redis/v8 v8.11.5
+	github.com/gofrs/uuid v4.0.0+incompatible
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/gookit/color v1.5.2
-	github.com/satori/go.uuid v1.2.0
 	github.com/spf13/viper v1.12.0
 	golang.org/x/sync v0.0.0-20220819030929-7fc1605a5dde
 	gorm.io/gorm v1.23.8
@@ -45,7 +45,7 @@ require (
 	github.com/xo/terminfo v0.0.0-20210125001918-ca9a967f8778 // indirect
 	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4 // indirect
 	golang.org/x/sys v0.0.0-20220829200755-d48e67d00261 // indirect
-	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/text v0.3.8 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect

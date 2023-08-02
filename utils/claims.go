@@ -3,8 +3,8 @@ package utils
 import (
 	"fmt"
 	"github.com/athlon18/micro-core/config/structs"
+	"github.com/gofrs/uuid"
 	"github.com/golang-jwt/jwt"
-	uuid "github.com/satori/go.uuid"
 )
 
 // Custom claims structure
